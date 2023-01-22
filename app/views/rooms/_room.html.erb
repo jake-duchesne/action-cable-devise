@@ -1,0 +1,15 @@
+<div id="<%= dom_id room %>" data-controller="room">
+  <p>
+    <strong>Name:</strong>
+    <%= room.name %>
+  </p>
+
+  <%= content_tag(:div, "", data: {
+    room_target: "roomData",
+    room_id: room.id
+  }) %>
+
+  <div data-room-target="joinList"></div>
+
+
+</div>
